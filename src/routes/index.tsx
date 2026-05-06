@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, Database, Workflow, Users, ShieldCheck, BookOpen } from "lucide-react";
 import orbit from "@/assets/metaweb-orbit.jpg";
+import bookCover from "@/assets/book-cover.gif";
 import { Logo } from "@/components/Logo";
 import { SeatForm } from "@/components/SeatForm";
 
@@ -285,22 +286,12 @@ function Index() {
       <section className="border-y border-ink/10 bg-cream py-20">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <div className="relative aspect-[3/4] max-w-sm overflow-hidden rounded-md bg-navy-deep p-10 text-cream shadow-[0_40px_80px_-40px_oklch(0.16_0.06_262_/_0.7)]">
-              <div className="absolute inset-0 bg-dot-grid-light opacity-50" />
-              <div className="relative flex h-full flex-col justify-between">
-                <BookOpen className="h-8 w-8 text-electric-bright" strokeWidth={1.2} />
-                <div>
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-electric-bright">
-                    CRC Press · 2023
-                  </p>
-                  <h3 className="mt-3 font-display text-4xl leading-tight">
-                    The <em className="not-italic text-electric-bright">Metaweb.</em>
-                  </h3>
-                  <p className="mt-3 text-xs uppercase tracking-[0.2em] text-cream/60">
-                    by Bridgit DAO
-                  </p>
-                </div>
-              </div>
+            <div className="relative aspect-[3/4] max-w-sm overflow-hidden rounded-md bg-navy-deep shadow-[0_40px_80px_-40px_oklch(0.16_0.06_262_/_0.7)]">
+              <img
+                src={bookCover}
+                alt="The Metaweb book cover by Bridgit DAO"
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
           <div className="lg:col-span-6 lg:col-start-7">

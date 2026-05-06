@@ -159,5 +159,30 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
   }
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .bg-dot-grid {
+    background-image: radial-gradient(oklch(0.22 0.07 260 / 0.18) 1px, transparent 1px);
+    background-size: 14px 14px;
+  }
+  .bg-dot-grid-light {
+    background-image: radial-gradient(oklch(0.98 0.01 85 / 0.12) 1px, transparent 1px);
+    background-size: 14px 14px;
+  }
+  .text-balance { text-wrap: balance; }
+  .corner-marks::before, .corner-marks::after {
+    content: ""; position: absolute; width: 14px; height: 14px;
+    border: 1px solid currentColor; opacity: 0.4;
+  }
+  .corner-marks::before { top: 12px; left: 12px; border-right: 0; border-bottom: 0; }
+  .corner-marks::after { bottom: 12px; right: 12px; border-left: 0; border-top: 0; }
 }

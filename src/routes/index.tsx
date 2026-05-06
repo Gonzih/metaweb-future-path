@@ -163,7 +163,9 @@ function Index() {
 
               <div className="mt-auto pt-10">
                 <a
-                  href="#"
+                  href="https://www.zeffy.com/en-US/ticketing/the-metaweb-book-nft-course"
+                  target="_blank"
+                  rel="noreferrer"
                   className="group inline-flex w-full items-center justify-between rounded-md bg-electric px-5 py-3.5 text-sm font-semibold uppercase tracking-wide text-cream transition hover:bg-electric-bright"
                 >
                   Enroll Now — $99

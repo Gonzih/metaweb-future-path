@@ -286,11 +286,11 @@ function Index() {
       <section className="border-y border-ink/10 bg-cream py-20">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <div className="relative aspect-[3/4] max-w-sm overflow-hidden rounded-md bg-navy-deep shadow-[0_40px_80px_-40px_oklch(0.16_0.06_262_/_0.7)]">
+            <div className="relative flex aspect-[3/4] max-w-sm items-center justify-center overflow-hidden rounded-md p-4">
               <img
                 src={bookCover}
                 alt="The Metaweb book cover by Bridgit DAO"
-                className="h-full w-full object-cover"
+                className="max-h-full max-w-full object-contain drop-shadow-[0_40px_60px_oklch(0.16_0.06_262_/_0.5)]"
               />
             </div>
           </div>

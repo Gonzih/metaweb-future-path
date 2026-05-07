@@ -160,6 +160,17 @@ function Index() {
                 Early bird pricing ends day of the event. Secure your seat at
                 the lowest rate.
               </p>
+              <div className="mt-4 rounded-sm border border-electric/40 bg-electric/10 p-3">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-electric-bright">
+                  Use code at checkout
+                </p>
+                <p className="mt-1 font-display text-lg tracking-wider text-cream">
+                  EARLYBIRDMETA
+                </p>
+                <p className="mt-1 text-[11px] text-cream/60">
+                  Saves $150 — drops $249 to $99
+                </p>
+              </div>
 
               <div className="mt-auto pt-10">
                 <a

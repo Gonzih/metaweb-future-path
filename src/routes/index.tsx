@@ -183,7 +183,7 @@ function Index() {
                 it all the way to $99.
               </p>
 
-              <div className="mt-auto pt-10">
+              <div className="mt-auto space-y-3 pt-10">
                 <a
                   href="https://www.zeffy.com/en-US/ticketing/the-metaweb-book-nft-course"
                   target="_blank"
@@ -193,6 +193,18 @@ function Index() {
                   Enroll Now — $99
                   <ArrowUpRight className="h-4 w-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                 </a>
+                <a
+                  href="https://www.zeffy.com/en-US/ticketing/the-metaweb-book-nft-course"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group inline-flex w-full items-center justify-between rounded-md border border-cream/30 px-5 py-3 text-xs font-semibold uppercase tracking-wide text-cream/90 transition hover:border-electric hover:text-cream"
+                >
+                  Or reserve a seat — pay later
+                  <ArrowUpRight className="h-3.5 w-3.5 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                </a>
+                <p className="text-center text-[11px] text-cream/50">
+                  Same link — choose ticket or free seat reservation at checkout.
+                </p>
               </div>
             </article>
 

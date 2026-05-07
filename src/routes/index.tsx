@@ -3,7 +3,6 @@ import { ArrowUpRight, Database, Workflow, Users, ShieldCheck, BookOpen } from "
 import orbit from "@/assets/metaweb-orbit.jpg";
 import bookCover from "@/assets/book-cover.gif";
 import { Logo } from "@/components/Logo";
-import { SeatForm } from "@/components/SeatForm";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -131,7 +130,7 @@ function Index() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             {/* CARD 1 — Enroll */}
             <article className="relative flex flex-col rounded-md bg-navy-deep p-8 text-cream shadow-[0_30px_60px_-30px_oklch(0.16_0.06_262_/_0.6)]">
               <div className="absolute right-5 top-5 rounded-sm bg-electric px-2 py-1 text-[9px] font-semibold uppercase tracking-[0.2em]">
@@ -230,20 +229,6 @@ function Index() {
               </div>
             </article>
 
-            {/* CARD 3 — Save seat */}
-            <article className="flex flex-col rounded-md border border-electric/30 bg-navy p-8 text-cream">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-electric-bright">
-                Not ready yet?
-              </p>
-              <h3 className="mt-3 font-display text-3xl">Save my seat.</h3>
-              <p className="mt-4 text-sm text-cream/70">
-                Reserve your spot now — no payment required. We'll notify you
-                when registration opens and before early bird pricing expires.
-              </p>
-              <div className="mt-6">
-                <SeatForm />
-              </div>
-            </article>
           </div>
         </div>
       </section>

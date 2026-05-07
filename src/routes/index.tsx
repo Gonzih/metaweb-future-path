@@ -141,35 +141,47 @@ function Index() {
               </p>
               <h3 className="mt-3 font-display text-3xl">Enroll today.</h3>
 
-              <div className="mt-8 space-y-3">
-                <div className="flex items-baseline gap-3">
-                  <span className="font-display text-6xl text-cream">$99</span>
-                  <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-electric-bright">
-                    Day-of early bird
-                  </span>
+              <div className="mt-8 space-y-5">
+                <div className="rounded-md border border-electric/40 bg-electric/10 p-5">
+                  <div className="flex items-baseline gap-3">
+                    <span className="font-display text-7xl text-cream">$99</span>
+                    <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-electric-bright">
+                      Early bird
+                    </span>
+                  </div>
+                  <p className="mt-2 text-sm text-cream/80">
+                    With code <span className="font-display tracking-wider text-cream">EARLYBIRDMETA</span> — saves $150.
+                  </p>
                 </div>
-                <div className="flex items-center gap-4 text-sm text-cream/60">
-                  <span className="line-through decoration-electric/60">$249</span>
-                  <span className="line-through decoration-electric/60">$149</span>
-                  <span className="text-cream/40">list / post-event</span>
+
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="rounded-sm border border-cream/15 bg-navy/40 p-4">
+                    <p className="font-display text-3xl text-cream/90">$149</p>
+                    <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-cream/60">
+                      Human Tech Week
+                    </p>
+                    <p className="mt-1 text-[11px] text-cream/50">
+                      Through May 14
+                    </p>
+                  </div>
+                  <div className="rounded-sm border border-cream/15 bg-navy/40 p-4">
+                    <p className="font-display text-3xl text-cream/90">$249</p>
+                    <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-cream/60">
+                      Full price
+                    </p>
+                    <p className="mt-1 text-[11px] text-cream/50">
+                      List rate after May 14
+                    </p>
+                  </div>
                 </div>
               </div>
 
               <p className="mt-6 text-sm text-cream/70">
-                Early bird pricing ends day of the event. Secure your seat at
-                the lowest rate.
+                Lock in the lowest rate now — Human Tech Week pricing of $149
+                runs through May 14, after which the course returns to the
+                $249 list price. Use the early bird code at checkout to drop
+                it all the way to $99.
               </p>
-              <div className="mt-4 rounded-sm border border-electric/40 bg-electric/10 p-3">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-electric-bright">
-                  Use code at checkout
-                </p>
-                <p className="mt-1 font-display text-lg tracking-wider text-cream">
-                  EARLYBIRDMETA
-                </p>
-                <p className="mt-1 text-[11px] text-cream/60">
-                  Saves $150 — drops $249 to $99
-                </p>
-              </div>
 
               <div className="mt-auto pt-10">
                 <a

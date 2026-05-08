@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Metaweb — A Course on the Next Level of the Internet | ISOC Nevada</title>
+    <script>
+      // Single Page App redirect for GitHub Pages.
+      // When GitHub Pages serves a 404, this script redirects to index.html
+      // preserving the requested path in the query string so the SPA router
+      // can restore it on load.
+      var l = window.location;
+      l.replace(
+        l.protocol +
+          "//" +
+          l.hostname +
+          (l.port ? ":" + l.port : "") +
+          l.pathname
+            .split("/")
+            .slice(0, 1)
+            .join("/") +
+          "/?p=" +
+          encodeURIComponent(
+            l.pathname.slice(1) +
+              (l.search ? "&" + l.search.slice(1) : "") +
+              l.hash,
+          ),
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

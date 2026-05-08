@@ -352,12 +352,12 @@ function Index() {
           </div>
           <div className="text-sm text-cream/60 sm:text-right">
             <p>Internet Society — Nevada Chapter</p>
-            <p className="mt-1">
+            {/* <p className="mt-1">
               Questions?{" "}
               <a href="mailto:hello@isoc-nv.org" className="text-electric-bright underline-offset-4 hover:underline">
                 hello@isoc-nv.org
               </a>
-            </p>
+            </p> */}
             <p className="mt-3 text-[10px] uppercase tracking-[0.3em] text-cream/40">
               AI-aware · Mission-driven
             </p>

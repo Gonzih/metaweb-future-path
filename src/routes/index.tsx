@@ -5,15 +5,6 @@ import bookCover from "@/assets/book-cover.gif";
 import { Logo } from "@/components/Logo";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "The Metaweb — A Course on the Next Level of the Internet | ISOC Nevada" },
-      { name: "description", content: "A course on the meta-layer above the Web — eliminate misinformation, enable collective intelligence, and reshape how humans and AI interact online. Presented by ISOC Nevada." },
-      { property: "og:title", content: "The Metaweb: The Next Level of the Internet" },
-      { property: "og:description", content: "ISOC Nevada presents a course based on the book by Bridgit DAO. Early bird $99." },
-      { property: "og:type", content: "website" },
-    ],
-  }),
   component: Index,
 });
 

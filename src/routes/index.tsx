@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Database, Workflow, Users, ShieldCheck, BookOpen } from "lucide-react";
 import orbit from "@/assets/metaweb-orbit.jpg";
 import bookCover from "@/assets/book-cover.gif";
@@ -15,9 +15,17 @@ function Index() {
       <header className="border-b border-ink/10">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
           <Logo />
-          <span className="hidden text-[10px] font-semibold uppercase tracking-[0.25em] text-ink/60 md:block">
-            The Meta-Layer Initiative
-          </span>
+          <div className="flex items-center gap-4">
+            <span className="hidden text-[10px] font-semibold uppercase tracking-[0.25em] text-ink/60 lg:block">
+              The Meta-Layer Initiative
+            </span>
+            <Link
+              to="/begin-your-journey"
+              className="inline-flex items-center gap-2 rounded-md border border-electric px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-electric transition hover:bg-electric hover:text-cream"
+            >
+              Enroll Now
+            </Link>
+          </div>
         </div>
       </header>
 

@@ -9,8 +9,14 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as BeginYourJourneyRouteImport } from './routes/begin-your-journey'
 import { Route as IndexRouteImport } from './routes/index'
 
+const BeginYourJourneyRoute = BeginYourJourneyRouteImport.update({
+  id: '/begin-your-journey',
+  path: '/begin-your-journey',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +25,39 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/begin-your-journey': typeof BeginYourJourneyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/begin-your-journey': typeof BeginYourJourneyRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/begin-your-journey': typeof BeginYourJourneyRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/begin-your-journey'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/begin-your-journey'
+  id: '__root__' | '/' | '/begin-your-journey'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BeginYourJourneyRoute: typeof BeginYourJourneyRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/begin-your-journey': {
+      id: '/begin-your-journey'
+      path: '/begin-your-journey'
+      fullPath: '/begin-your-journey'
+      preLoaderRoute: typeof BeginYourJourneyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +70,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BeginYourJourneyRoute: BeginYourJourneyRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

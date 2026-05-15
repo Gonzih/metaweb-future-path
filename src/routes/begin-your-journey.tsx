@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight, Play, Check } from "lucide-react";
+import { ArrowUpRight, Check } from "lucide-react";
 import { Logo } from "@/components/Logo";
 
 export const Route = createFileRoute("/begin-your-journey")({
@@ -13,7 +13,7 @@ const features = [
   },
   {
     title: "3 Live Sessions",
-    description: "Author cohort discussions. June 15, 22, 29.",
+    description: "Author cohort discussions.",
   },
   {
     title: "AI Annotation Layer",
@@ -94,26 +94,20 @@ function BeginYourJourney() {
             <p className="mt-6 max-w-xl text-lg text-cream/70">
               Architecting the Metaweb — a 3-week course with the Author.
             </p>
-            <p className="mt-4 font-display text-xl text-electric">
-              June 15 · 22 · 29, 2026 · 11:30am–1pm
-            </p>
+
           </div>
 
-          {/* Video placeholder */}
+          {/* Intro video */}
           <div className="mt-14">
-            <div
-              id="course-intro-video"
-              className="relative mx-auto aspect-video max-w-3xl overflow-hidden rounded-md border border-cream/20 bg-navy"
-            >
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full border border-cream/20 bg-cream/5 transition hover:bg-cream/10">
-                  <Play className="h-7 w-7 translate-x-0.5 fill-cream/50 text-cream/50" />
-                </div>
-                <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-cream/40">
-                  Introduction Video
-                </p>
-              </div>
-            </div>
+            <video
+              src="/begin-your-journey.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="mx-auto w-full max-w-3xl rounded-lg"
+              style={{ aspectRatio: '16/9', objectFit: 'cover' }}
+            />
           </div>
         </div>
       </section>

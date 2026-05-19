@@ -100,7 +100,7 @@ function BeginYourJourney() {
           {/* Intro video */}
           <div className="mt-14">
             <video
-              src="/begin-your-journey.mp4"
+              src="/begin-your-journey-v2.mp4"
               autoPlay
               muted
               loop

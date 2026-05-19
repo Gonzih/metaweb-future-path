@@ -33,21 +33,21 @@ const weeks = [
   {
     week: "Week 1",
     title: "The Shift — From Attention to Agency",
-    reading: "Part One & Two",
+    reading: "Part One",
     session: "The Crisis of Cognitive Freedom",
     dark: false,
   },
   {
     week: "Week 2",
     title: "Building the Overweb",
-    reading: "Part Three (Emergence)",
+    reading: "Part Two",
     session: "The Mechanics of Collective Intelligence",
     dark: true,
   },
   {
     week: "Week 3",
     title: "The Noospheric Future",
-    reading: "Part Three (What Becomes Possible)",
+    reading: "Part Three",
     session: "Governance & The Metaweb DAO",
     dark: false,
   },
@@ -195,7 +195,7 @@ function BeginYourJourney() {
                   <p
                     className={`mt-1 text-sm ${dark ? "text-cream/80" : "text-ink/75"}`}
                   >
-                    "{session}"
+                    {session}
                   </p>
                 </div>
               </div>

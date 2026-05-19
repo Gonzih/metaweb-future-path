@@ -169,6 +169,17 @@
   }
 }
 
+/*
+ * book-cover: applied to the book cover <img> in the ABOUT THE BOOK section.
+ * NOTE: CSS animation-duration does NOT control GIF frame timing — GIF speed is
+ * baked into the file itself and cannot be changed via CSS. This rule is a no-op
+ * for GIF playback speed. To truly slow down the animation, the GIF file itself
+ * must be re-encoded with slower frame delays (e.g. using ffmpeg or an online tool).
+ */
+img.book-cover {
+  animation-duration: 3s;
+}
+
 @layer utilities {
   .bg-dot-grid {
     background-image: radial-gradient(oklch(0.22 0.07 260 / 0.18) 1px, transparent 1px);

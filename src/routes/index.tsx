@@ -413,7 +413,7 @@ function Index() {
               <img
                 src={bookCover}
                 alt="The Metaweb book cover by Bridgit DAO"
-                className="max-h-full max-w-full object-contain drop-shadow-[0_40px_60px_oklch(0.16_0.06_262_/_0.5)]"
+                className="book-cover max-h-full max-w-full object-contain drop-shadow-[0_40px_60px_oklch(0.16_0.06_262_/_0.5)]"
               />
             </div>
           </div>

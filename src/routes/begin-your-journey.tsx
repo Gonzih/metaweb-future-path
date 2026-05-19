@@ -112,6 +112,32 @@ function BeginYourJourney() {
         </div>
       </section>
 
+      {/* EARLY CTA — compact enrollment band */}
+      <section className="border-b border-ink/10 bg-cream py-10 sm:py-12">
+        <div className="mx-auto flex max-w-lg flex-col items-center gap-6 px-6 text-center">
+          <div>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-electric">
+              Enroll Today
+            </p>
+            <div className="mt-3 font-display text-7xl leading-none text-ink">
+              $249
+            </div>
+            <p className="mt-3 text-sm text-ink/55">
+              One purchase. Lifetime access to the Metaweb.
+            </p>
+          </div>
+          <a
+            href="https://www.zeffy.com/en-US/ticketing/the-metaweb-book-nft-course"
+            target="_blank"
+            rel="noreferrer"
+            className="group inline-flex w-full items-center justify-between rounded-md bg-electric px-6 py-4 text-sm font-semibold uppercase tracking-wide text-cream transition hover:bg-electric-bright"
+          >
+            Enroll Now
+            <ArrowUpRight className="h-4 w-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+          </a>
+        </div>
+      </section>
+
       {/* 2. WHAT YOU GET — cream, dot-grid */}
       <section className="bg-cream bg-dot-grid py-20">
         <div className="mx-auto max-w-7xl px-6">

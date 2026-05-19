@@ -247,6 +247,182 @@ function Index() {
         </div>
       </section>
 
+      {/* BROWSER OVERLAY IMAGE — between section 3 and 4 */}
+      <section className="border-b border-ink/10 bg-ink py-16">
+        <div className="mx-auto max-w-5xl px-6">
+          <img
+            src="/assets/metaweb-overlay.png"
+            alt="A browser article enriched with contextual overlays, trust signals, and community presence"
+            className="w-full rounded-md shadow-[0_40px_80px_-20px_oklch(0_0_0_/_0.6)]"
+          />
+          <p className="mt-6 text-center text-sm text-cream/50 italic">
+            The same article — enriched with context, trust, and people.
+          </p>
+        </div>
+      </section>
+
+      {/* SECTION 4 — The AI Era Changes Everything */}
+      <section className="border-b border-cream/10 bg-navy-deep py-24 text-cream">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mx-auto max-w-4xl">
+            <p className="mb-6 text-[10px] font-semibold uppercase tracking-[0.3em] text-electric-bright">
+              The stakes
+            </p>
+            <h2 className="font-display text-5xl leading-[1.0] sm:text-6xl lg:text-7xl">
+              The AI Era Changes Everything
+            </h2>
+            <p className="mt-10 text-lg leading-relaxed text-cream/80 sm:text-xl">
+              The Internet is entering a new phase. AI systems can now generate text, images,
+              video, persuasion, identities, and social behavior at planetary scale. As synthetic
+              media proliferates, humanity faces a growing crisis of:
+            </p>
+
+            <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                "Trust",
+                "Context verification",
+                "Identity",
+                "Cognitive sovereignty",
+                "Collective sensemaking",
+              ].map((item) => (
+                <li
+                  key={item}
+                  className="flex items-center gap-3 rounded-md border border-cream/15 bg-cream/5 px-5 py-4 text-sm font-semibold text-cream/85"
+                >
+                  <span className="block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-electric-bright" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-14 border-t border-cream/10 pt-12 space-y-5 text-base leading-relaxed text-cream/75">
+              <p>
+                The Metaweb proposes a different path: A civic coordination layer above the
+                webpage where trust signals, contextual overlays, presence systems, and
+                community governance become part of the browsing experience itself.
+              </p>
+              <p>
+                This course examines the philosophical, technical, and societal foundations
+                of that transition.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 5 — Early Perspectives (pull quotes) */}
+      <section className="border-b border-ink/10 bg-cream py-24">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mx-auto max-w-4xl">
+            <p className="mb-6 text-[10px] font-semibold uppercase tracking-[0.3em] text-electric">
+              Early perspectives
+            </p>
+            <h2 className="font-display text-4xl leading-tight sm:text-5xl">
+              What experts say.
+            </h2>
+
+            <div className="mt-16 space-y-16">
+              {[
+                {
+                  quote:
+                    "The notion of a meta-environment above the webpage is directionally interesting. Overall, the book presents a creative argument that warrants further discussion and exploration.",
+                  author: "Vint Cerf",
+                  role: "One of the Fathers of the Internet",
+                },
+                {
+                  quote:
+                    "The Metaweb proposal is both inspiring and realistic. It presents a feasible solution to problems of the digital age.",
+                  author: "Jean Wagemans",
+                  role: "Amsterdam Center for Language and Communication",
+                },
+                {
+                  quote:
+                    "The book describes the Overweb pattern which builds on pioneering technologies like topic maps and the semantic web, bringing to the foreground emphasis on safety, security, privacy, and governance.",
+                  author: "Jack Park",
+                  role: "Cofounder of Topic Quests",
+                },
+              ].map(({ quote, author, role }) => (
+                <figure key={author} className="border-l-2 border-electric pl-8">
+                  <blockquote className="font-display text-2xl leading-snug text-ink sm:text-3xl">
+                    &ldquo;{quote}&rdquo;
+                  </blockquote>
+                  <figcaption className="mt-6">
+                    <span className="text-sm font-semibold text-ink">{author}</span>
+                    <span className="mx-2 text-ink/30">·</span>
+                    <span className="text-sm text-ink/55">{role}</span>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 6 — Student testimonials */}
+      <section className="border-b border-ink/10 bg-cream py-24">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mx-auto max-w-4xl">
+            <p className="mb-6 text-[10px] font-semibold uppercase tracking-[0.3em] text-electric">
+              Participants
+            </p>
+            <h2 className="font-display text-4xl leading-tight sm:text-5xl">
+              What Participants Say
+            </h2>
+
+            <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
+              {[
+                "This permanently changed how I think about the Web.",
+                "I finally understood how trust could exist above platforms instead of inside them.",
+                "The course made the Metaweb feel concrete rather than abstract.",
+                "I now see browser interfaces as civic infrastructure.",
+                "This connected AI governance, collective intelligence, and interface design in a way I had never considered before.",
+              ].map((quote, i) => (
+                <blockquote
+                  key={i}
+                  className="rounded-md border border-ink/12 bg-ink/[0.03] px-6 py-5 text-base leading-relaxed text-ink/80"
+                >
+                  &ldquo;{quote}&rdquo;
+                </blockquote>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 7 — Who This Course Is For */}
+      <section className="border-b border-ink/10 bg-cream py-24">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mx-auto max-w-4xl">
+            <p className="mb-6 text-[10px] font-semibold uppercase tracking-[0.3em] text-electric">
+              Audience
+            </p>
+            <h2 className="font-display text-4xl leading-tight sm:text-5xl">
+              This Course May Resonate With:
+            </h2>
+
+            <ul className="mt-12 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {[
+                "Civic technologists",
+                "Interface designers",
+                "AI governance researchers",
+                "Collective intelligence thinkers",
+                "Digital rights advocates",
+                "Educators and organizers",
+                "Protocol and standards communities",
+                "Futurists and systems thinkers",
+                "Builders exploring the future of online coordination",
+                "People seeking alternatives to extractive platform dynamics",
+              ].map((item) => (
+                <li key={item} className="flex items-baseline gap-3 text-base text-ink/80">
+                  <span className="mt-1 block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-electric" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* THREE PATHS — main CTA */}
       <section id="paths" className="bg-cream py-20">
         <div className="mx-auto max-w-7xl px-6">

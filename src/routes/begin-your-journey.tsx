@@ -462,7 +462,7 @@ function BeginYourJourney() {
               What Participants Say
             </h2>
 
-            <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <div className="mt-16 space-y-14">
               {[
                 "This permanently changed how I think about the Web.",
                 "I finally understood how trust could exist above platforms instead of inside them.",
@@ -470,12 +470,14 @@ function BeginYourJourney() {
                 "I now see browser interfaces as civic infrastructure.",
                 "This connected AI governance, collective intelligence, and interface design in a way I had never considered before.",
               ].map((quote, i) => (
-                <blockquote
-                  key={i}
-                  className="rounded-md border border-ink/12 bg-ink/[0.03] px-6 py-5 text-base leading-relaxed text-ink/80"
-                >
-                  &ldquo;{quote}&rdquo;
-                </blockquote>
+                <figure key={i} className="border-l-2 border-ink/20 pl-8">
+                  <blockquote className="font-display text-2xl leading-snug text-ink sm:text-3xl">
+                    &ldquo;{quote}&rdquo;
+                  </blockquote>
+                  <figcaption className="mt-4 text-sm text-ink/40 uppercase tracking-[0.2em]">
+                    Course Participant
+                  </figcaption>
+                </figure>
               ))}
             </div>
           </div>

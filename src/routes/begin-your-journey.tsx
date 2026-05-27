@@ -246,7 +246,7 @@ function BeginYourJourney() {
           </a>
 
           <p className="mt-5 text-[10px] leading-relaxed text-cream/40">
-            Standard: $149 at Human Tech Week · $249 full price ·{" "}
+            Standard: $249 full price ·{" "}
             <span className="font-mono tracking-wider text-cream/50">
               ISOCNEVADAMEMBER
             </span>{" "}

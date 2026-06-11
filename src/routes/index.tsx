@@ -35,19 +35,21 @@ function Index() {
         <div className="relative bg-cream bg-dot-grid p-8 sm:p-14 lg:p-20">
           <div className="corner-marks relative text-ink/50" />
           <p className="mb-10 text-[10px] font-semibold uppercase tracking-[0.3em] text-ink/60">
-            ISOC Nevada · Course
+            ISOC Nevada · Certification Course
           </p>
           <h1 className="font-display text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">
             The <em className="not-italic text-electric">Metaweb.</em>
             <br />
-            The next <em className="not-italic text-electric">level</em>
+            A <em className="not-italic text-electric">Certification</em>
             <br />
-            of the internet.
+            Course.
           </h1>
           <p className="mt-8 max-w-md text-base text-ink/70">
-            A course on how a meta-layer above today's Web can eliminate
-            misinformation, enable collective intelligence, and reshape how
-            humans and AI interact online.
+            A 3-week asynchronous certification course on the meta-layer above
+            today's Web — eliminate misinformation, enable collective
+            intelligence, and reshape how humans and AI interact online. Earn
+            your <strong className="text-ink">Metaweb Level I</strong>{" "}
+            credential upon successful completion.
           </p>
           <a
             href="#paths"
@@ -87,7 +89,7 @@ function Index() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-electric">
-              About the course
+              About the certification course
             </p>
             <h2 className="mt-4 font-display text-4xl leading-tight">
               A vision <em className="not-italic text-electric">for what</em>
@@ -102,10 +104,16 @@ function Index() {
               fair value exchange.
             </p>
             <p>
-              This course unpacks the vision behind the book{" "}
-              <em>The Metaweb</em> (CRC Press, 2023), the Meta-Layer
-              Initiative, and what it means for developers, policymakers, and
-              citizens who want to shape the next internet.
+              This certification course unpacks the vision behind the book{" "}
+              <em>The Metaweb</em> (CRC Press, 2023), the Meta-Layer Initiative,
+              and what it means for developers, policymakers, and citizens who
+              want to shape the next internet.
+            </p>
+            <p className="rounded-md border border-electric/30 bg-electric/5 px-5 py-4 text-base text-ink/80">
+              <strong className="text-ink">Course format:</strong> 3-week asynchronous course with 3 optional weekly
+              author-led live sessions + replay. Participants earn{" "}
+              <strong className="text-ink">Metaweb Level I</strong> certification
+              upon successful completion.
             </p>
           </div>
         </div>
@@ -136,7 +144,7 @@ function Index() {
                 Most popular
               </div>
               <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-electric-bright">
-                Join the Course
+                Join the Certification Course
               </p>
               <h3 className="mt-3 font-display text-3xl">Enroll today.</h3>
 

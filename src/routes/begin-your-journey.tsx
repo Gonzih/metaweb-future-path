@@ -8,12 +8,16 @@ export const Route = createFileRoute("/begin-your-journey")({
 
 const features = [
   {
+    title: "Metaweb Level I Certification",
+    description: "Earn your credential upon successful completion of the course.",
+  },
+  {
     title: "NFT Digital Book",
     description: "Your key to the Metaweb. A living asset on the blockchain.",
   },
   {
-    title: "3 Live Sessions",
-    description: "Author cohort discussions.",
+    title: "3 Optional Live Sessions + Replay",
+    description: "Weekly author-led cohort discussions. Attend live or watch the replay.",
   },
   {
     title: "AI Annotation Layer",
@@ -54,8 +58,9 @@ const weeks = [
 ];
 
 const pricingFeatures = [
+  "Metaweb Level I Certification upon successful completion",
   "NFT Digital Book (BTC Ordinals)",
-  "3 live cohort sessions with the author",
+  "3 optional weekly author-led live sessions + replay",
   "AI annotation layer via Canopi",
   "Contribution token rewards",
   "Lifetime access & V2 shaping rights",
@@ -85,14 +90,17 @@ function BeginYourJourney() {
           <div className="relative">
             <div className="corner-marks relative text-cream/20" />
             <p className="mb-8 text-[10px] font-semibold uppercase tracking-[0.3em] text-electric-bright">
-              ISOC Nevada · Metaweb Course
+              ISOC Nevada · Metaweb Certification Course
             </p>
             <h1 className="font-display text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">
               Begin Your{" "}
               <em className="not-italic text-electric">Journey.</em>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-cream/70">
-              Architecting the Metaweb — a 3-week course with the Author.
+              Architecting the Metaweb — a 3-week asynchronous certification
+              course with the Author. Three optional weekly live sessions + replay.
+              Earn your <strong className="text-cream">Metaweb Level I</strong>{" "}
+              credential upon successful completion.
             </p>
 
           </div>
@@ -117,13 +125,13 @@ function BeginYourJourney() {
         <div className="mx-auto flex max-w-lg flex-col items-center gap-6 px-6 text-center">
           <div>
             <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-electric">
-              Enroll Today
+              Enroll in the Certification Course
             </p>
             <div className="mt-3 font-display text-7xl leading-none text-ink">
               $249
             </div>
             <p className="mt-3 text-sm text-ink/55">
-              One purchase. Lifetime access to the Metaweb.
+              3-week asynchronous course · Metaweb Level I certification included.
             </p>
           </div>
           <a
@@ -148,7 +156,7 @@ function BeginYourJourney() {
             Your <em className="not-italic text-electric">Investment.</em>
           </h2>
           <p className="mt-4 max-w-md text-base text-ink/65">
-            One purchase. Lifetime access to the Metaweb.
+            One purchase. Certification course + lifetime access to the Metaweb.
           </p>
 
           <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-3">
@@ -169,11 +177,14 @@ function BeginYourJourney() {
       <section className="border-y border-ink/10">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-electric">
-            Three weeks
+            Three weeks · Asynchronous
           </p>
           <h2 className="mt-4 font-display text-4xl sm:text-5xl">
             The Journey.
           </h2>
+          <p className="mt-3 text-base text-ink/60">
+            Self-paced reading each week, with optional author-led live sessions and replays.
+          </p>
         </div>
         {weeks.map(({ week, title, reading, session, dark }) => (
           <div
@@ -216,7 +227,7 @@ function BeginYourJourney() {
                   <p
                     className={`text-[10px] font-semibold uppercase tracking-[0.2em] ${dark ? "text-cream/60" : "text-ink/50"}`}
                   >
-                    Live Session
+                    Optional Live Session + Replay
                   </p>
                   <p
                     className={`mt-1 text-sm ${dark ? "text-cream/80" : "text-ink/75"}`}
@@ -547,6 +558,15 @@ function BeginYourJourney() {
       {/* 4. PRICING — navy-deep, centered */}
       <section className="bg-navy-deep py-24 text-cream">
         <div className="mx-auto max-w-lg px-6 text-center">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-electric-bright">
+            Certification Course
+          </p>
+          <h2 className="mt-4 font-display text-3xl sm:text-4xl text-cream">
+            Earn Metaweb Level I
+          </h2>
+          <p className="mt-3 text-base text-cream/65">
+            Complete the 3-week asynchronous course and receive your Metaweb Level I credential.
+          </p>
           <div className="mt-8 flex items-end justify-center">
             <span className="font-display text-8xl leading-none text-cream">
               $249

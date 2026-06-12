@@ -37,22 +37,22 @@ const weeks = [
   {
     week: "Week 1",
     title: "The Shift — From Attention to Agency",
-    reading: "Part One",
-    session: "The Crisis of Cognitive Freedom",
+    reading: "Chapters 1–8",
+    session: "June 15 • 11:30am–1:00pm PT",
     dark: false,
   },
   {
     week: "Week 2",
     title: "Building the Overweb",
-    reading: "Part Two",
-    session: "The Mechanics of Collective Intelligence",
+    reading: "Chapters 9–12",
+    session: "June 22 • 11:30am–1:00pm PT",
     dark: true,
   },
   {
     week: "Week 3",
     title: "The Noospheric Future",
-    reading: "Part Three",
-    session: "Governance & The Metaweb DAO",
+    reading: "Chapters 13–16 + Epilogue",
+    session: "June 29 • 11:30am–1:00pm PT",
     dark: false,
   },
 ];

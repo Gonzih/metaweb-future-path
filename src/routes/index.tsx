@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Database, Workflow, Users, ShieldCheck, BookOpen } from "lucide-react";
-import orbit from "@/assets/metaweb-orbit.jpg";
+import heroBanner from "@/assets/hero-banner.png";
 import bookCover from "@/assets/book-cover.gif";
 import { Logo } from "@/components/Logo";
 
@@ -29,57 +29,31 @@ function Index() {
         </div>
       </header>
 
-      {/* HERO — split panel, cream + navy */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 border-b border-ink/10">
-        {/* Cream side */}
-        <div className="relative bg-cream bg-dot-grid p-8 sm:p-14 lg:p-20">
-          <div className="corner-marks relative text-ink/50" />
-          <p className="mb-10 text-[10px] font-semibold uppercase tracking-[0.3em] text-ink/60">
-            ISOC Nevada · Certification Course
-          </p>
-          <h1 className="font-display text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">
-            The <em className="not-italic text-electric">Metaweb.</em>
-            <br />
-            A <em className="not-italic text-electric">Certification</em>
-            <br />
-            Course.
-          </h1>
-          <p className="mt-8 max-w-md text-base text-ink/70">
-            A 3-week asynchronous certification course on the meta-layer above
-            today's Web — eliminate misinformation, enable collective
-            intelligence, and reshape how humans and AI interact online. Earn
-            your <strong className="text-ink">Metaweb Level I</strong>{" "}
-            credential upon successful completion.
-          </p>
-          <a
-            href="#paths"
-            className="mt-12 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.25em]"
-          >
-            Choose your path below
-            <span className="inline-flex h-7 w-7 items-center justify-center rounded-sm bg-electric text-cream">
-              <ArrowUpRight className="h-3.5 w-3.5" />
-            </span>
-          </a>
-        </div>
-
-        {/* Navy side */}
-        <div
-          className="relative min-h-[420px] bg-navy-deep bg-cover bg-center text-cream lg:min-h-0"
-          style={{ backgroundImage: `linear-gradient(135deg, oklch(0.16 0.06 262 / 0.85), oklch(0.16 0.06 262 / 0.7)), url(${orbit})` }}
-        >
-          <div className="absolute left-8 top-8 sm:left-14 sm:top-14">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-electric-bright">
-              The meta-layer.
+      {/* HERO — full-width banner */}
+      <section className="border-b border-ink/10">
+        <div className="relative">
+          <img
+            src={heroBanner}
+            alt="Unveiling the Meta-Layer — A 3-week certification course"
+            className="w-full object-cover"
+          />
+          <div className="absolute inset-0 flex flex-col items-start justify-end p-8 sm:p-14 lg:p-20 bg-gradient-to-t from-navy-deep/60 to-transparent">
+            <h1 className="font-display text-4xl leading-[0.95] sm:text-5xl lg:text-6xl text-cream drop-shadow-lg">
+              Unveiling the <em className="not-italic text-electric">Meta-Layer</em>
               <br />
-              Above the page.
-            </p>
-          </div>
-          <div className="absolute bottom-8 right-8 text-right sm:bottom-14 sm:right-14">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-cream/60">
-              Based on the book by
+              <span className="text-3xl sm:text-4xl lg:text-5xl text-cream/90">A 3-week certification course</span>
               <br />
-              <span className="text-cream">Bridgit DAO · CRC Press 2023</span>
-            </p>
+              <span className="text-2xl sm:text-3xl lg:text-4xl text-electric-bright">Metaweb Levels I, II</span>
+            </h1>
+            <a
+              href="#paths"
+              className="mt-8 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.25em] text-cream"
+            >
+              Choose your path below
+              <span className="inline-flex h-7 w-7 items-center justify-center rounded-sm bg-electric text-cream">
+                <ArrowUpRight className="h-3.5 w-3.5" />
+              </span>
+            </a>
           </div>
         </div>
       </section>
